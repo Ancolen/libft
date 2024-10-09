@@ -22,12 +22,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	if (n == 0 || dst == src)
 		return (dst);
 	if (d > s)
-	{
 		while (n-- > 0)
-		{
 			d[n] = s[n];
-		}
-	}
 	else if (d < s)
 		ft_memcpy(dst, src, n);
 	return (dst);
